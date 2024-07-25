@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title> Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="containe"></div>
+    <nav>
+        <img src="images/yuvasree.png" class="logo">
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Services</a></li>
+            <li> <a href="#">Portfolio</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<div class="header-text">
+    <p>Software Engineer</p>
+    <h1>Hi!, I'm<span>Yuvasree</span></h1>
+</div>
+<!----------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/PHOTO-2024-07-23-19-28-06.jpg">
+            </div>
+            <div class="about-col-2"></div>
+              <h1 class="sub-title">About Me</h1>
+              <p>With foundational skills in HTML, CSS, JavaScript, and Python, I am eager to contribute to dynamic projects and collaborate with a creative team. My goal is to leverage my technical knowledge and problem-solving abilities to create impactful digital experiences.
+
+</p>
+            <div class="tab-titles">
+             <p  class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+             <p  class="tab-links" onclick="opentab('Experience')">Experience</p>
+             <p  class="tab-links" onclick="opentab('Education')"></p>Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+            <ul>
+<li><span>Hard Skills</span><br>HTML<br>CSS<br>JavaScript<br>Python</li>
+
+<li><span>Soft Skills</span><br>Attention to Detail<br>Team Collaboration<br>Time Management</li>
+            </ul>
+        </div>
+        <div class="tab-contents active-tab" id="Experience">
+            <ul>
+<li><span>Website Designing & Development Intern</span><br>in HTML, CSS, JavaScript.<br>Connect Infosystems,Chennai-95.<br>January 2023 - February 2023<br></li>
+
+            </ul>
+        </div>
+        <div class="tab-contents active-tab" id="Education">
+            <ul>
+<li><span>Secondary School</span><br>St.Joseph Matric.HR.SEC.School,Mulagumoodu.<br>[87%] 2018-2019</li>
+
+<li><span>Higher Secondary School</span><br>St.Joseph Matric.HR.SEC.School,Mulagumoodu.<br>[86%] 2020-2021</li>
+
+<li><span>BE.Computer Science & Engineering</span><br>Saveetha Engineering College,Chennai.<br>2021-2025</li>
+
+            </ul>
+        </div>
+        <div id="Services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa fa-crop-alt"></i>
+                        <h2>Web Design</h2>
+                        <p>
+                            "Provided comprehensive web design services, responsive layout creation, and custom functionality development. Collaborated with clients to translate their vision into engaging and user-friendly websites. Utilized tools like Adobe XD, Figma, and HTML/CSS to deliver high-quality web solutions."</p>
+                            <a href="#">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <p><i class="fas fa-paper-plane"></i>yuvasreeks7@gmail.com</p>
+                    <p><i class="fas fa-paper-square-alt"></i>9342641719</p>
+                        <a href="https://www.linkedin.com/in/yuvasreeks/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">submit</btn></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.ClassList.remove("active-link");
+            }
+            for (tabcontents of tabcontents){
+                tabcontents.ClassList.remove("active-tab");
+            }
+            event.currentTarget.ClassList.add("active-link");
+            document.getElementById("tabname").classList.add("active-tab");
+        }
+    </script>
+    </body>
+</html>
